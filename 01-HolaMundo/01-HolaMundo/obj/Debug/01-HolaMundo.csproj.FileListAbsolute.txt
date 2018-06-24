@@ -1,0 +1,5 @@
+D:\KIBERNUM\C-SHARP\FUENTES\01-HolaMundo\01-HolaMundo\bin\Debug\01-HolaMundo.exe.config
+D:\KIBERNUM\C-SHARP\FUENTES\01-HolaMundo\01-HolaMundo\bin\Debug\01-HolaMundo.exe
+D:\KIBERNUM\C-SHARP\FUENTES\01-HolaMundo\01-HolaMundo\bin\Debug\01-HolaMundo.pdb
+D:\KIBERNUM\C-SHARP\FUENTES\01-HolaMundo\01-HolaMundo\obj\Debug\01-HolaMundo.exe
+D:\KIBERNUM\C-SHARP\FUENTES\01-HolaMundo\01-HolaMundo\obj\Debug\01-HolaMundo.pdb
