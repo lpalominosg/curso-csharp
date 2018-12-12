@@ -42,6 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Poo\Auto.cs" />
+    <Compile Include="Poo\Calculo.cs" />
+    <Compile Include="Poo\Camion.cs" />
+    <Compile Include="Poo\Cliente.cs" />
+    <Compile Include="Poo\Cuenta.cs" />
+    <Compile Include="Poo\Hijo.cs" />
+    <Compile Include="Poo\ICuenta.cs" />
+    <Compile Include="Poo\IVenta.cs" />
+    <Compile Include="Poo\Padre.cs" />
+    <Compile Include="Poo\Producto.cs" />
+    <Compile Include="Poo\Vehiculo.cs" />
+    <Compile Include="Poo\Vehiculomovil.cs" />
+    <Compile Include="Poo\Venta.cs" />
+    <Compile Include="Poo\VentaAlcholes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
