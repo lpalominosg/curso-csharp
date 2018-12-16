@@ -1,4 +1,4 @@
-﻿namespace VistaWindows
+﻿namespace VistaWindows.Vista
 {
     partial class frmProducto
     {
@@ -40,6 +40,8 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSumaPU = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCodProducto
@@ -116,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 223);
+            this.label1.Location = new System.Drawing.Point(301, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 8;
@@ -124,15 +126,15 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(169, 220);
+            this.txtCantidad.Location = new System.Drawing.Point(407, 39);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(50, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(63, 20);
             this.txtCantidad.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 223);
+            this.label2.Location = new System.Drawing.Point(301, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 10;
@@ -140,16 +142,26 @@
             // 
             // txtSumaPU
             // 
-            this.txtSumaPU.Location = new System.Drawing.Point(335, 220);
+            this.txtSumaPU.Location = new System.Drawing.Point(407, 65);
             this.txtSumaPU.Name = "txtSumaPU";
-            this.txtSumaPU.Size = new System.Drawing.Size(100, 20);
+            this.txtSumaPU.Size = new System.Drawing.Size(63, 20);
             this.txtSumaPU.TabIndex = 11;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(50, 198);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(652, 219);
+            this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 286);
+            this.ClientSize = new System.Drawing.Size(729, 464);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtSumaPU);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCantidad);
@@ -165,6 +177,7 @@
             this.Name = "frmProducto";
             this.Text = "Producto";
             this.Load += new System.EventHandler(this.frmProducto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,6 +197,7 @@
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSumaPU;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

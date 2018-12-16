@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using Sistema.Controlador.Tools;
 using Sistema.Modelo;
 
-namespace VistaWindows
+namespace VistaWindows.Vista
 {
     public partial class frmProducto : Form
     {
@@ -26,6 +26,8 @@ namespace VistaWindows
             txtCantidad.Text= "0";
             txtSumaPU.Text = "0";
             baseProducto = new List<Producto>();
+            dataGridView1.DataSource = baseProducto;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -56,6 +58,7 @@ namespace VistaWindows
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             Producto producto = new Producto();
             producto.Codprod = txtCodProducto.Text;
             producto.Nombre = txtNombreProducto.Text;
@@ -64,6 +67,9 @@ namespace VistaWindows
 
             txtCantidad.Text = "" + VentaControlador.CantidadBaseProducto(baseProducto);
             txtSumaPU.Text = "" + VentaControlador.SumaPUBaseProducto(baseProducto);
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = baseProducto;
             this.LimpiarFormulario();
  
         }
@@ -71,6 +77,23 @@ namespace VistaWindows
         private void frmProducto_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void RefreshGridView()
+        {
+            if (dataGridView1.InvokeRequired)
+            {
+                dataGridView1.Invoke((MethodInvoker)delegate ()
+                {
+                    RefreshGridView();
+                });
+            }
+            else
+                dataGridView1.Refresh();
         }
     }
 }
