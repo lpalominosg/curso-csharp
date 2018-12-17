@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+
 namespace Sistema.Modelo
 {
+    [Table("Producto")]
     public class Producto
     {
+        [Key]
+        [Required]
         private string codprod;
         private string nombre;
         private int valorunitario;
